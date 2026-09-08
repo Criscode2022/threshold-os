@@ -1,0 +1,29 @@
+{
+  "name": "@threshold/web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npx ng serve --host 0.0.0.0 --port 4200 --proxy-config proxy.conf.json",
+    "build": "npx ng build",
+    "lint": "ng build --configuration=development --verbose=false"
+  },
+  "dependencies": {
+    "@angular/common": "^19.2.0",
+    "@angular/compiler": "^19.2.0",
+    "@angular/core": "^19.2.0",
+    "@angular/forms": "^19.2.0",
+    "@angular/platform-browser": "^19.2.0",
+    "@angular/router": "^19.2.0",
+    "rxjs": "^7.8.2",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@angular/build": "^19.2.0",
+    "@angular/cli": "^19.2.0",
+    "@angular/compiler-cli": "^19.2.0",
+    "@tailwindcss/postcss": "^4.1.3",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.3",
+    "typescript": "~5.7.0"
+  }
+}

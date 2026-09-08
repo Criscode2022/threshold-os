@@ -1,0 +1,19 @@
+{
+  "name": "threshold-os",
+  "private": true,
+  "description": "Threshold — licensed childcare and after-school operations desk",
+  "workspaces": ["apps/api", "apps/web"],
+  "scripts": {
+    "dev": "npm run dev --workspaces --if-present",
+    "dev:api": "npm run start:dev -w @threshold/api",
+    "dev:web": "npm run start -w @threshold/web",
+    "build": "npm run build -w @threshold/api && npm run build -w @threshold/web",
+    "test": "npm run test -w @threshold/api",
+    "lint": "npm run lint --workspaces --if-present",
+    "migrate": "node scripts/migrate.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "devDependencies": {
+    "pg": "^8.16.3"
+  }
+}
